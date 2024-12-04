@@ -118,6 +118,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(192, 255, 192);
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(label2);
             panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
@@ -127,6 +128,7 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(Eliminar_contacto);
             panel2.Controls.Add(buscarContacto);
             panel2.Controls.Add(Actualizar_contacto);
@@ -140,6 +142,7 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(192, 255, 192);
+            panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(panel2);
             panel3.Controls.Add(label1);
             panel3.Location = new Point(237, 110);
@@ -156,6 +159,7 @@
             Controls.Add(panel3);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
