@@ -1,6 +1,6 @@
 ﻿namespace Maria_contactos
 {
-    partial class Form1
+    partial class bienvenida
     {
         /// <summary>
         ///  Required designer variable.
@@ -150,14 +150,14 @@
             panel3.Size = new Size(289, 293);
             panel3.TabIndex = 9;
             // 
-            // Form1
+            // bienvenida
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(panel3);
-            Name = "Form1";
+            Name = "bienvenida";
             Text = "Form1";
             Load += Form1_Load;
             panel1.ResumeLayout(false);

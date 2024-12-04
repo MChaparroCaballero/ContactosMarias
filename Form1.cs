@@ -1,15 +1,17 @@
 namespace Maria_contactos
 {
-    public partial class Form1 : Form
+    public partial class bienvenida : Form
     {
-        public Form1()
+        public bienvenida()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            BuscarPantalla buscarPantalla = new BuscarPantalla();
+            this.Hide();
+            buscarPantalla.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
