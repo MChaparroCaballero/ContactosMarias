@@ -3,7 +3,6 @@ C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\bi
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\bin\Debug\net8.0-windows\Maria_contactos.runtimeconfig.json
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\bin\Debug\net8.0-windows\Maria_contactos.dll
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\bin\Debug\net8.0-windows\Maria_contactos.pdb
-C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.Form1.resources
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.csproj.GenerateResource.cache
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.AssemblyInfoInputs.cache
@@ -15,3 +14,5 @@ C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\ob
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.pdb
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.genruntimeconfig.cache
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\ref\Maria_contactos.dll
+C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.BuscarPantalla.resources
+C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.bienvenida.resources

@@ -16,5 +16,43 @@ namespace Maria_contactos
         {
             InitializeComponent();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buscarContacto_Click(object sender, EventArgs e)
+        {
+            /**botn de accion de la pantalla de buscar contactos***/
+
+            if (Nombre.Text != null&& tel.Text!=null)
+          {
+                searchContact();
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
     }
 }
