@@ -10,27 +10,21 @@ using System.Windows.Forms;
 
 namespace Maria_contactos
 {
-    public partial class CrearContactoPantalla : Form
+    public partial class CrearContacto : Form
     {
-        public CrearContactoPantalla()
+        public CrearContacto()
         {
             InitializeComponent();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Volver_Click(object sender, EventArgs e)
         {
             this.Hide();
-            bienvenida bienvenida = new bienvenida();
-            bienvenida.Show();
-            
+            bienvenida nueva = new bienvenida();
+            nueva.Show();
         }
 
-        private void crear_Click(object sender, EventArgs e)
+        private void CrearClick_Click(object sender, EventArgs e)
         {
 
         }

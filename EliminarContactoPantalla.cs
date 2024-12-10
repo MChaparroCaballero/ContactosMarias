@@ -16,5 +16,17 @@ namespace Maria_contactos
         {
             InitializeComponent();
         }
+
+        private void EliminarClick_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void eliminarVolver(object sender, EventArgs e)
+        {
+            this.Hide();
+            bienvenida jn = new bienvenida();
+            jn.Show();
+        }
     }
 }

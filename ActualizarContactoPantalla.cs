@@ -16,5 +16,17 @@ namespace Maria_contactos
         {
             InitializeComponent();
         }
+
+        private void ActualizarVolverclick(object sender, EventArgs e)
+        {
+            this.Hide();
+            bienvenida ll= new bienvenida();
+            ll.Show();
+        }
+
+        private void ActualizarButon(object sender, EventArgs e)
+        {
+
+        }
     }
 }

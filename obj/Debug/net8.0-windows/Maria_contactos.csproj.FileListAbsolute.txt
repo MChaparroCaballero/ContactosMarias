@@ -16,3 +16,6 @@ C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\ob
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\ref\Maria_contactos.dll
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.BuscarPantalla.resources
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.bienvenida.resources
+C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.ActualizarContactoPantalla.resources
+C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.CrearContacto.resources
+C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.EliminarContactoPantalla.resources

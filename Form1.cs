@@ -21,12 +21,16 @@ namespace Maria_contactos
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            EliminarContactoPantalla kk = new EliminarContactoPantalla();
+            kk.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ActualizarContactoPantalla hh = new ActualizarContactoPantalla();
+            hh.Show();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -37,6 +41,15 @@ namespace Maria_contactos
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CrearContacto cn = new CrearContacto();
+            this.Hide();
+            cn.Show();
         }
     }
 }

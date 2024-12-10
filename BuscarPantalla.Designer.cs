@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label2 = new Label();
             panel3 = new Panel();
             panel2 = new Panel();
             label1 = new Label();
@@ -39,7 +40,6 @@
             label4 = new Label();
             Volver = new Button();
             areaContactoEncontrado = new ListBox();
-            label2 = new Label();
             label5 = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -56,6 +56,20 @@
             panel1.Size = new Size(800, 71);
             panel1.TabIndex = 8;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.BorderStyle = BorderStyle.FixedSingle;
+            label2.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(324, 19);
+            label2.Name = "label2";
+            label2.Size = new Size(179, 28);
+            label2.TabIndex = 7;
+            label2.Text = "Buscar contacto";
+            label2.Click += label2_Click;
+            // 
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(192, 255, 192);
@@ -65,6 +79,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(273, 248);
             panel3.TabIndex = 10;
+            panel3.Paint += panel3_Paint;
             // 
             // panel2
             // 
@@ -153,7 +168,7 @@
             Volver.TabIndex = 12;
             Volver.Text = "Volver al menu";
             Volver.UseVisualStyleBackColor = false;
-            Volver.Click += button1_Click;
+            Volver.Click += buscarVolver_Click;
             // 
             // areaContactoEncontrado
             // 
@@ -164,20 +179,6 @@
             areaContactoEncontrado.Name = "areaContactoEncontrado";
             areaContactoEncontrado.Size = new Size(220, 319);
             areaContactoEncontrado.TabIndex = 13;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.White;
-            label2.BorderStyle = BorderStyle.FixedSingle;
-            label2.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(324, 19);
-            label2.Name = "label2";
-            label2.Size = new Size(179, 28);
-            label2.TabIndex = 7;
-            label2.Text = "Buscar contacto";
-            label2.Click += label2_Click;
             // 
             // label5
             // 
@@ -191,6 +192,7 @@
             label5.Size = new Size(185, 28);
             label5.TabIndex = 14;
             label5.Text = "Rellene los datos";
+            label5.Click += label5_Click;
             // 
             // BuscarPantalla
             // 
@@ -221,10 +223,7 @@
         private Panel panel2;
         private Button buscar;
 
-        public BuscarPantalla()
-        {
-            InitializeComponent();
-        }
+        
 
         private Label label1;
         private Label label3;

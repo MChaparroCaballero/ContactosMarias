@@ -30,7 +30,7 @@
         {
             label1 = new Label();
             buscarContacto = new Button();
-            CrearContacto = new Button();
+            CrearContactobutoon = new Button();
             Actualizar_contacto = new Button();
             Eliminar_contacto = new Button();
             label2 = new Label();
@@ -67,16 +67,17 @@
             buscarContacto.UseVisualStyleBackColor = false;
             buscarContacto.Click += button1_Click;
             // 
-            // CrearContacto
+            // CrearContactobutoon
             // 
-            CrearContacto.BackColor = SystemColors.ButtonShadow;
-            CrearContacto.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrearContacto.Location = new Point(12, 57);
-            CrearContacto.Name = "CrearContacto";
-            CrearContacto.Size = new Size(214, 37);
-            CrearContacto.TabIndex = 3;
-            CrearContacto.Text = "Crear contacto";
-            CrearContacto.UseVisualStyleBackColor = false;
+            CrearContactobutoon.BackColor = SystemColors.ButtonShadow;
+            CrearContactobutoon.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CrearContactobutoon.Location = new Point(12, 57);
+            CrearContactobutoon.Name = "CrearContactobutoon";
+            CrearContactobutoon.Size = new Size(214, 37);
+            CrearContactobutoon.TabIndex = 3;
+            CrearContactobutoon.Text = "Crear contacto";
+            CrearContactobutoon.UseVisualStyleBackColor = false;
+            CrearContactobutoon.Click += button2_Click;
             // 
             // Actualizar_contacto
             // 
@@ -132,7 +133,7 @@
             panel2.Controls.Add(Eliminar_contacto);
             panel2.Controls.Add(buscarContacto);
             panel2.Controls.Add(Actualizar_contacto);
-            panel2.Controls.Add(CrearContacto);
+            panel2.Controls.Add(CrearContactobutoon);
             panel2.Location = new Point(24, 72);
             panel2.Name = "panel2";
             panel2.Size = new Size(240, 198);
@@ -171,7 +172,7 @@
         #endregion
         private Label label1;
         private Button buscarContacto;
-        private Button CrearContacto;
+        private Button CrearContactobutoon;
         private Button Actualizar_contacto;
         private Button Eliminar_contacto;
         private Label label2;

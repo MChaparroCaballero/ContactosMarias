@@ -26,9 +26,9 @@ namespace Maria_contactos
         {
             /**botn de accion de la pantalla de buscar contactos***/
 
-            if (Nombre.Text != null&& tel.Text!=null)
-          {
-                searchContact();
+            if (Nombre.Text != null && tel.Text != null)
+            {
+                /***searchContact();***/
             }
         }
 
@@ -44,7 +44,9 @@ namespace Maria_contactos
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            bienvenida nn = new bienvenida();
+            nn.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -52,7 +54,21 @@ namespace Maria_contactos
 
         }
 
-        
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buscarVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            bienvenida hnueva = new bienvenida();
+            hnueva.Show();
+        }
     }
 }
