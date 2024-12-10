@@ -27,6 +27,22 @@ namespace Maria_contactos
         private void CrearClick_Click(object sender, EventArgs e)
         {
 
+            if (Nombre.Text.Length!=0 && tel.Text.Length!=0)
+            {
+                
+              Contact contacto = new Contact();
+                contacto.Phone = tel.Text ;
+                contacto.Name = Nombre.Text;
+                bienvenida.agenda.Add(contacto);
+               
+
+            }
+        }
+
+
+        private void Nombre_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -1,10 +1,18 @@
+using System.Collections;
+
 namespace Maria_contactos
 {
     public partial class bienvenida : Form
     {
+
+        ArrayList agenda;
         public bienvenida()
         {
+
+
             InitializeComponent();
+            agenda = new ArrayList();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

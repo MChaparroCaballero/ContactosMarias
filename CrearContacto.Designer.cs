@@ -153,6 +153,7 @@
             Nombre.Name = "Nombre";
             Nombre.Size = new Size(191, 23);
             Nombre.TabIndex = 9;
+            Nombre.TextChanged += Nombre_TextChanged;
             // 
             // CrearClick
             // 
