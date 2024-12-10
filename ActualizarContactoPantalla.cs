@@ -20,11 +20,16 @@ namespace Maria_contactos
         private void ActualizarVolverclick(object sender, EventArgs e)
         {
             this.Hide();
-            bienvenida ll= new bienvenida();
+            bienvenida ll = new bienvenida();
             ll.Show();
         }
 
         private void ActualizarButon(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
