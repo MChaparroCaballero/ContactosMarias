@@ -4,14 +4,13 @@ namespace Maria_contactos
 {
     public partial class bienvenida : Form
     {
-
-        ArrayList agenda;
+        static Contact[] agenda = new Contact[100];
         public bienvenida()
         {
 
 
             InitializeComponent();
-            agenda = new ArrayList();
+            
             
         }
 

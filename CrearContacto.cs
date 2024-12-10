@@ -33,7 +33,6 @@ namespace Maria_contactos
               Contact contacto = new Contact();
                 contacto.Phone = tel.Text ;
                 contacto.Name = Nombre.Text;
-                bienvenida.agenda.Add(contacto);
                
 
             }
