@@ -19,3 +19,4 @@ C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\ob
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.ActualizarContactoPantalla.resources
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.CrearContacto.resources
 C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.EliminarContactoPantalla.resources
+C:\Users\MariaChaparroCaballe\contactosMarias\Maria_contactos\Maria_contactos\obj\Debug\net8.0-windows\Maria_contactos.VerContactosPantalla.resources

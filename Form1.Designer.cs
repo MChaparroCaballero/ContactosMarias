@@ -37,6 +37,7 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
+            VerContactos = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -48,7 +49,7 @@
             label1.BackColor = Color.White;
             label1.BorderStyle = BorderStyle.FixedSingle;
             label1.Font = new Font("Times New Roman", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(24, 27);
+            label1.Location = new Point(25, 16);
             label1.Name = "label1";
             label1.Size = new Size(239, 34);
             label1.TabIndex = 1;
@@ -130,13 +131,14 @@
             // 
             panel2.BackColor = Color.White;
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(VerContactos);
             panel2.Controls.Add(Eliminar_contacto);
             panel2.Controls.Add(buscarContacto);
             panel2.Controls.Add(Actualizar_contacto);
             panel2.Controls.Add(CrearContactobutoon);
-            panel2.Location = new Point(24, 72);
+            panel2.Location = new Point(24, 64);
             panel2.Name = "panel2";
-            panel2.Size = new Size(240, 198);
+            panel2.Size = new Size(240, 239);
             panel2.TabIndex = 8;
             panel2.Paint += panel2_Paint;
             // 
@@ -146,10 +148,22 @@
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(panel2);
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(237, 110);
+            panel3.Location = new Point(237, 102);
             panel3.Name = "panel3";
-            panel3.Size = new Size(289, 293);
+            panel3.Size = new Size(289, 322);
             panel3.TabIndex = 9;
+            // 
+            // VerContactos
+            // 
+            VerContactos.BackColor = SystemColors.ButtonShadow;
+            VerContactos.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            VerContactos.Location = new Point(12, 186);
+            VerContactos.Name = "VerContactos";
+            VerContactos.Size = new Size(214, 37);
+            VerContactos.TabIndex = 10;
+            VerContactos.Text = "Ver contactos";
+            VerContactos.UseVisualStyleBackColor = false;
+            VerContactos.Click += VeerContactos_button;
             // 
             // bienvenida
             // 
@@ -179,5 +193,6 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
+        private Button VerContactos;
     }
 }

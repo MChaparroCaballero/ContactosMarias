@@ -10,8 +10,8 @@ namespace Maria_contactos
 
 
             InitializeComponent();
-            
-            
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,13 +50,21 @@ namespace Maria_contactos
 
         }
 
-        
+
 
         private void button2_Click(object sender, EventArgs e)
         {
             CrearContacto cn = new CrearContacto();
             this.Hide();
             cn.Show();
+        }
+
+        private void VeerContactos_button(object sender, EventArgs e)
+        {
+            this.Hide();
+            VerContactosPantalla jj = new VerContactosPantalla();
+            jj.Show();
+
         }
     }
 }

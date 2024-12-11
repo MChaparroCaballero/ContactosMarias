@@ -39,8 +39,8 @@
             buscar = new Button();
             label4 = new Label();
             Volver = new Button();
-            areaContactoEncontrado = new ListBox();
             label5 = new Label();
+            areaContactoEncontrado = new TextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -170,16 +170,6 @@
             Volver.UseVisualStyleBackColor = false;
             Volver.Click += buscarVolver_Click;
             // 
-            // areaContactoEncontrado
-            // 
-            areaContactoEncontrado.BackColor = Color.Ivory;
-            areaContactoEncontrado.FormattingEnabled = true;
-            areaContactoEncontrado.ItemHeight = 15;
-            areaContactoEncontrado.Location = new Point(554, 111);
-            areaContactoEncontrado.Name = "areaContactoEncontrado";
-            areaContactoEncontrado.Size = new Size(220, 319);
-            areaContactoEncontrado.TabIndex = 13;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -194,13 +184,23 @@
             label5.Text = "Rellene los datos";
             label5.Click += label5_Click;
             // 
+            // areaContactoEncontrado
+            // 
+            areaContactoEncontrado.BackColor = Color.Ivory;
+            areaContactoEncontrado.BorderStyle = BorderStyle.FixedSingle;
+            areaContactoEncontrado.Location = new Point(558, 107);
+            areaContactoEncontrado.Multiline = true;
+            areaContactoEncontrado.Name = "areaContactoEncontrado";
+            areaContactoEncontrado.Size = new Size(217, 322);
+            areaContactoEncontrado.TabIndex = 20;
+            // 
             // BuscarPantalla
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label5);
             Controls.Add(areaContactoEncontrado);
+            Controls.Add(label5);
             Controls.Add(Volver);
             Controls.Add(label4);
             Controls.Add(panel3);
@@ -231,8 +231,8 @@
         private TextBox Nombre;
         private Label label4;
         private Button Volver;
-        private ListBox areaContactoEncontrado;
         private Label label2;
         private Label label5;
+        private TextBox areaContactoEncontrado;
     }
 }
