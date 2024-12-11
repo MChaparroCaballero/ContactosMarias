@@ -36,8 +36,9 @@
             label2 = new Label();
             panel1 = new Panel();
             panel2 = new Panel();
-            panel3 = new Panel();
+            button1 = new Button();
             VerContactos = new Button();
+            panel3 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -49,7 +50,7 @@
             label1.BackColor = Color.White;
             label1.BorderStyle = BorderStyle.FixedSingle;
             label1.Font = new Font("Times New Roman", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(25, 16);
+            label1.Location = new Point(16, 10);
             label1.Name = "label1";
             label1.Size = new Size(239, 34);
             label1.TabIndex = 1;
@@ -131,27 +132,29 @@
             // 
             panel2.BackColor = Color.White;
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(button1);
             panel2.Controls.Add(VerContactos);
             panel2.Controls.Add(Eliminar_contacto);
             panel2.Controls.Add(buscarContacto);
             panel2.Controls.Add(Actualizar_contacto);
             panel2.Controls.Add(CrearContactobutoon);
-            panel2.Location = new Point(24, 64);
+            panel2.Location = new Point(16, 57);
             panel2.Name = "panel2";
-            panel2.Size = new Size(240, 239);
+            panel2.Size = new Size(240, 279);
             panel2.TabIndex = 8;
             panel2.Paint += panel2_Paint;
             // 
-            // panel3
+            // button1
             // 
-            panel3.BackColor = Color.FromArgb(192, 255, 192);
-            panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(panel2);
-            panel3.Controls.Add(label1);
-            panel3.Location = new Point(237, 102);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(289, 322);
-            panel3.TabIndex = 9;
+            button1.BackColor = SystemColors.ButtonShadow;
+            button1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(13, 229);
+            button1.Name = "button1";
+            button1.Size = new Size(214, 37);
+            button1.TabIndex = 11;
+            button1.Text = "Salir";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += Salir_click;
             // 
             // VerContactos
             // 
@@ -164,6 +167,17 @@
             VerContactos.Text = "Ver contactos";
             VerContactos.UseVisualStyleBackColor = false;
             VerContactos.Click += VeerContactos_button;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(192, 255, 192);
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Controls.Add(panel2);
+            panel3.Controls.Add(label1);
+            panel3.Location = new Point(228, 77);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(274, 352);
+            panel3.TabIndex = 9;
             // 
             // bienvenida
             // 
@@ -194,5 +208,6 @@
         private Panel panel2;
         private Panel panel3;
         private Button VerContactos;
+        private Button button1;
     }
 }

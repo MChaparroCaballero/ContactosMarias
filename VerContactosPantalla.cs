@@ -19,17 +19,21 @@ namespace Maria_contactos
             InitializeComponent();
         }
 
+        /*-------------------------boton de accion de ver todos los contactos-------------------------------------------------------------------------------------------*/
         private void VerContactosTodos_button(object sender, EventArgs e)
         {
+
+            /******en un array de string guardamos el resultado de llamar a la funcion ver contactos de la clase arraycontactos*****/
             string[] datos = ArrayContacts.verContactos();
 
+            /*****recorremos y editamos el texto de la textbox, añadiendo cada elemento del array en una nueva linea ****/
             foreach (var item in datos)
             {
-                areatodosContactoEncontrado.AppendText(item + Environment.NewLine); // Añadir cada elemento en una nueva línea
+                areatodosContactoEncontrado.AppendText(item + Environment.NewLine);
             }
             
         }
-
+        /*-----------------------------boton de accion de volver al home--------------------------------------------------------------------------------*/
         private void VercontactosVolver_button(object sender, EventArgs e)
         {
             this.Hide();

@@ -21,21 +21,21 @@ namespace Maria_contactos
         {
 
         }
-
+        /*--------------------------------------boton de accion para buscar un contacto-----------------------------------------------------------------------------------------*/
         private void buscarContacto_Click(object sender, EventArgs e)
         {
-            /**botn de accion de la pantalla de buscar contactos***/
+            /**comprobamos que todos los campos estan rellenados y llamamos al metodo de buscar del array***/
 
             if (NombreBuscar.Text.Length != 0 && telbuscar.Text.Length != 0)
             {
-                areaContactoEncontrado.Text = ArrayContacts.BuscarContacto(telbuscar.Text);
+                areaContactoEncontrado.Text = ArrayContacts.BuscarContacto(telbuscar.Text, NombreBuscar.Text);
             }
             else
             {
                 MessageBox.Show("Error debe rellenar todos los campos antes de pulsar el boton");
             }
         }
-
+        /*-------------------------------------------------------------------------------------------------------------------------------*/
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -46,12 +46,7 @@ namespace Maria_contactos
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            bienvenida nn = new bienvenida();
-            nn.Show();
-        }
+        
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -67,14 +62,14 @@ namespace Maria_contactos
         {
 
         }
-
+        /*--------------------------------------------------boton de volver al home-----------------------------------------------------------------------------*/
         private void buscarVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
             bienvenida hnueva = new bienvenida();
             hnueva.Show();
         }
-
+        /*-------------------------------------------------------------------------------------------------------------------------------*/
         private void BuscarPantalla_Load(object sender, EventArgs e)
         {
 
