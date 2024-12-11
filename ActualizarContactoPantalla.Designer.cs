@@ -36,9 +36,9 @@
             panel2 = new Panel();
             label1 = new Label();
             label3 = new Label();
-            tel = new TextBox();
-            Nombre = new TextBox();
-            EliminarClick = new Button();
+            telViejo = new TextBox();
+            NombreViejo = new TextBox();
+            actualizarClick = new Button();
             panel4 = new Panel();
             panel5 = new Panel();
             label6 = new Label();
@@ -116,8 +116,8 @@
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(tel);
-            panel2.Controls.Add(Nombre);
+            panel2.Controls.Add(telViejo);
+            panel2.Controls.Add(NombreViejo);
             panel2.Location = new Point(22, 18);
             panel2.Name = "panel2";
             panel2.Size = new Size(246, 213);
@@ -144,35 +144,35 @@
             label3.TabIndex = 11;
             label3.Text = "Telefono del contacto viejo";
             // 
-            // tel
+            // telViejo
             // 
-            tel.BackColor = SystemColors.WindowFrame;
-            tel.ForeColor = Color.White;
-            tel.Location = new Point(15, 111);
-            tel.Name = "tel";
-            tel.Size = new Size(213, 23);
-            tel.TabIndex = 10;
+            telViejo.BackColor = SystemColors.WindowFrame;
+            telViejo.ForeColor = Color.White;
+            telViejo.Location = new Point(15, 111);
+            telViejo.Name = "telViejo";
+            telViejo.Size = new Size(213, 23);
+            telViejo.TabIndex = 10;
             // 
-            // Nombre
+            // NombreViejo
             // 
-            Nombre.BackColor = Color.DimGray;
-            Nombre.ForeColor = Color.White;
-            Nombre.Location = new Point(15, 49);
-            Nombre.Name = "Nombre";
-            Nombre.Size = new Size(213, 23);
-            Nombre.TabIndex = 9;
+            NombreViejo.BackColor = Color.DimGray;
+            NombreViejo.ForeColor = Color.White;
+            NombreViejo.Location = new Point(15, 49);
+            NombreViejo.Name = "NombreViejo";
+            NombreViejo.Size = new Size(213, 23);
+            NombreViejo.TabIndex = 9;
             // 
-            // EliminarClick
+            // actualizarClick
             // 
-            EliminarClick.BackColor = SystemColors.AppWorkspace;
-            EliminarClick.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            EliminarClick.Location = new Point(15, 159);
-            EliminarClick.Name = "EliminarClick";
-            EliminarClick.Size = new Size(213, 38);
-            EliminarClick.TabIndex = 2;
-            EliminarClick.Text = "Actualizar";
-            EliminarClick.UseVisualStyleBackColor = false;
-            EliminarClick.Click += ActualizarButon;
+            actualizarClick.BackColor = SystemColors.AppWorkspace;
+            actualizarClick.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            actualizarClick.Location = new Point(15, 159);
+            actualizarClick.Name = "actualizarClick";
+            actualizarClick.Size = new Size(213, 38);
+            actualizarClick.TabIndex = 2;
+            actualizarClick.Text = "Actualizar";
+            actualizarClick.UseVisualStyleBackColor = false;
+            actualizarClick.Click += ActualizarButon;
             // 
             // panel4
             // 
@@ -192,7 +192,7 @@
             panel5.Controls.Add(label7);
             panel5.Controls.Add(telnuevo);
             panel5.Controls.Add(nombrenuevo);
-            panel5.Controls.Add(EliminarClick);
+            panel5.Controls.Add(actualizarClick);
             panel5.Location = new Point(22, 18);
             panel5.Name = "panel5";
             panel5.Size = new Size(246, 213);
@@ -270,9 +270,9 @@
         private Panel panel2;
         private Label label1;
         private Label label3;
-        private TextBox tel;
-        private TextBox Nombre;
-        private Button EliminarClick;
+        private TextBox telViejo;
+        private TextBox NombreViejo;
+        private Button actualizarClick;
         private Panel panel4;
         private Panel panel5;
         private Label label6;

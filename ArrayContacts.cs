@@ -13,13 +13,13 @@ namespace Maria_contactos
         public static List<Contact> agenda = new List<Contact>();
 
 
-        public void AgregarContacto(Contact nuevo)
+        public static void AgregarContacto(Contact nuevo)
         {
             agenda.Add(nuevo);
             MessageBox.Show("Contacto agregado con exito");
         }
 
-        public string BuscarContacto(string tel)
+        public static string BuscarContacto(string tel)
         {
 
             string datos = null;
@@ -27,7 +27,7 @@ namespace Maria_contactos
             {
                 if (item.Phone.Equals(tel))
                 {
-                    datos = "Nombre " + item.Name + " Telefono " + item.Phone;
+                    datos = "Nombre: " + item.Name + " ---- "+ "Telefono: " + item.Phone;
                 }
 
             }
@@ -41,18 +41,18 @@ namespace Maria_contactos
             }
         
 
-        public string [] verContactos()
+        public static string [] verContactos()
         {
 
             string [] datos = new string[agenda.Count];
             for(int i=0; i<agenda.Count; i++) {
             
-                datos [i] = "Nombre " + agenda[i].Name + " telefono "+ agenda[i].Phone;
+                datos [i] = "Nombre: " + agenda[i].Name +" ---- " +"Telefono: "+ agenda[i].Phone;
                 
             }
             return datos;
         }
-        public void EliminarContacto(Contact viejo)
+        public static void EliminarContacto(Contact viejo)
         {
             bool encontrada = false;
             foreach (var item in agenda)
@@ -62,6 +62,8 @@ namespace Maria_contactos
                     encontrada = true;
                     agenda.Remove(item);
                     MessageBox.Show("Contacto eliminado con exito");
+                    return;
+
                 }
 
             }
@@ -72,7 +74,7 @@ namespace Maria_contactos
             }
         }
 
-        public void ActualizarContacto(Contact viejo, Contact nuevo)
+        public static void ActualizarContacto(Contact viejo, Contact nuevo)
         {
             bool encontrada = false;
             foreach (var item in agenda)

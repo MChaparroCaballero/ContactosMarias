@@ -26,9 +26,13 @@ namespace Maria_contactos
         {
             /**botn de accion de la pantalla de buscar contactos***/
 
-            if (Nombre.Text != null && tel.Text != null)
+            if (NombreBuscar.Text.Length != 0 && telbuscar.Text.Length != 0)
             {
-                /***searchContact();***/
+                areaContactoEncontrado.Text = ArrayContacts.BuscarContacto(telbuscar.Text);
+            }
+            else
+            {
+                MessageBox.Show("Error debe rellenar todos los campos antes de pulsar el boton");
             }
         }
 
@@ -69,6 +73,11 @@ namespace Maria_contactos
             this.Hide();
             bienvenida hnueva = new bienvenida();
             hnueva.Show();
+        }
+
+        private void BuscarPantalla_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

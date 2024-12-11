@@ -33,8 +33,13 @@ namespace Maria_contactos
               Contact contacto = new Contact();
                 contacto.Phone = tel.Text ;
                 contacto.Name = Nombre.Text;
-               
+                ArrayContacts.AgregarContacto(contacto);
 
+            }
+            else
+            {
+                
+                MessageBox.Show("Error debe rellenar los campos de datos antes de dar al boton");
             }
         }
 

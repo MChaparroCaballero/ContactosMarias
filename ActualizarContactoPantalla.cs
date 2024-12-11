@@ -26,7 +26,22 @@ namespace Maria_contactos
 
         private void ActualizarButon(object sender, EventArgs e)
         {
+            if (NombreViejo.Text.Length!=0 && telViejo.Text.Length!=0 && nombrenuevo.Text.Length !=0 && telnuevo.Text.Length!=0)
+            {
+                Contact VIEJO = new Contact();
+                VIEJO.Name = NombreViejo.Text;
+                VIEJO.Phone = telViejo.Text;
+                Contact nuevo = new Contact();
+                nuevo.Name = nombrenuevo.Text;
+                nuevo.Phone= telnuevo.Text;
+                ArrayContacts.ActualizarContacto(VIEJO, nuevo);
+            }
+            else
+            {
+                MessageBox.Show("Error debe rellenar todos los campos antes de pulsar el boton");
+            }
 
+            
         }
 
         private void label1_Click(object sender, EventArgs e)

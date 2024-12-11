@@ -35,8 +35,8 @@
             panel2 = new Panel();
             label1 = new Label();
             label3 = new Label();
-            tel = new TextBox();
-            Nombre = new TextBox();
+            teleliminar = new TextBox();
+            Nombreeliminar = new TextBox();
             EliminarClick = new Button();
             VolverCrear = new Button();
             panel1.SuspendLayout();
@@ -96,8 +96,8 @@
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(tel);
-            panel2.Controls.Add(Nombre);
+            panel2.Controls.Add(teleliminar);
+            panel2.Controls.Add(Nombreeliminar);
             panel2.Controls.Add(EliminarClick);
             panel2.Location = new Point(22, 18);
             panel2.Name = "panel2";
@@ -124,23 +124,23 @@
             label3.TabIndex = 11;
             label3.Text = "Telefono del contacto";
             // 
-            // tel
+            // teleliminar
             // 
-            tel.BackColor = SystemColors.WindowFrame;
-            tel.ForeColor = Color.White;
-            tel.Location = new Point(15, 111);
-            tel.Name = "tel";
-            tel.Size = new Size(191, 23);
-            tel.TabIndex = 10;
+            teleliminar.BackColor = SystemColors.WindowFrame;
+            teleliminar.ForeColor = Color.White;
+            teleliminar.Location = new Point(15, 111);
+            teleliminar.Name = "teleliminar";
+            teleliminar.Size = new Size(191, 23);
+            teleliminar.TabIndex = 10;
             // 
-            // Nombre
+            // Nombreeliminar
             // 
-            Nombre.BackColor = Color.DimGray;
-            Nombre.ForeColor = Color.White;
-            Nombre.Location = new Point(15, 49);
-            Nombre.Name = "Nombre";
-            Nombre.Size = new Size(191, 23);
-            Nombre.TabIndex = 9;
+            Nombreeliminar.BackColor = Color.DimGray;
+            Nombreeliminar.ForeColor = Color.White;
+            Nombreeliminar.Location = new Point(15, 49);
+            Nombreeliminar.Name = "Nombreeliminar";
+            Nombreeliminar.Size = new Size(191, 23);
+            Nombreeliminar.TabIndex = 9;
             // 
             // EliminarClick
             // 
@@ -195,8 +195,8 @@
         private Panel panel2;
         private Label label1;
         private Label label3;
-        private TextBox tel;
-        private TextBox Nombre;
+        private TextBox teleliminar;
+        private TextBox Nombreeliminar;
         private Button EliminarClick;
         private Button VolverCrear;
     }

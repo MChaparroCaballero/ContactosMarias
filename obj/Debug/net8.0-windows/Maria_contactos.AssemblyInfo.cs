@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Maria_contactos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3de00c165b05e9a539cbb214940c711c3d253ab1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31e07d9386b10ead56fd99dbaef5afaf438f169c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Maria_contactos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Maria_contactos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -28,24 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label4 = new Label();
             panel1 = new Panel();
             label2 = new Label();
             VercontactosVolver = new Button();
             Ver = new Button();
             areatodosContactoEncontrado = new TextBox();
+            label6 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(81, 75);
-            label4.Name = "label4";
-            label4.Size = new Size(111, 30);
-            label4.TabIndex = 14;
-            label4.Text = "Contactos";
             // 
             // panel1
             // 
@@ -86,9 +76,9 @@
             // 
             Ver.BackColor = SystemColors.AppWorkspace;
             Ver.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Ver.Location = new Point(32, 404);
+            Ver.Location = new Point(32, 388);
             Ver.Name = "Ver";
-            Ver.Size = new Size(220, 34);
+            Ver.Size = new Size(382, 34);
             Ver.TabIndex = 18;
             Ver.Text = "Ver contactos";
             Ver.UseVisualStyleBackColor = false;
@@ -98,22 +88,36 @@
             // 
             areatodosContactoEncontrado.BackColor = Color.Ivory;
             areatodosContactoEncontrado.BorderStyle = BorderStyle.FixedSingle;
-            areatodosContactoEncontrado.Location = new Point(32, 108);
+            areatodosContactoEncontrado.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            areatodosContactoEncontrado.Location = new Point(32, 118);
             areatodosContactoEncontrado.Multiline = true;
             areatodosContactoEncontrado.Name = "areatodosContactoEncontrado";
-            areatodosContactoEncontrado.Size = new Size(217, 290);
+            areatodosContactoEncontrado.Size = new Size(382, 264);
             areatodosContactoEncontrado.TabIndex = 19;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.BorderStyle = BorderStyle.FixedSingle;
+            label6.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(32, 87);
+            label6.Name = "label6";
+            label6.Size = new Size(124, 28);
+            label6.TabIndex = 22;
+            label6.Text = "Contactos:";
             // 
             // VerContactosPantalla
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label6);
             Controls.Add(areatodosContactoEncontrado);
             Controls.Add(Ver);
             Controls.Add(VercontactosVolver);
             Controls.Add(panel1);
-            Controls.Add(label4);
             Name = "VerContactosPantalla";
             Text = "VerContactosPantalla";
             panel1.ResumeLayout(false);
@@ -123,11 +127,11 @@
         }
 
         #endregion
-        private Label label4;
         private Panel panel1;
         private Label label2;
         private Button VercontactosVolver;
         private Button Ver;
         private TextBox areatodosContactoEncontrado;
+        private Label label6;
     }
 }

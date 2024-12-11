@@ -34,13 +34,13 @@
             panel2 = new Panel();
             label1 = new Label();
             label3 = new Label();
-            tel = new TextBox();
-            Nombre = new TextBox();
+            telbuscar = new TextBox();
+            NombreBuscar = new TextBox();
             buscar = new Button();
-            label4 = new Label();
             Volver = new Button();
             label5 = new Label();
             areaContactoEncontrado = new TextBox();
+            label6 = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -87,8 +87,8 @@
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(tel);
-            panel2.Controls.Add(Nombre);
+            panel2.Controls.Add(telbuscar);
+            panel2.Controls.Add(NombreBuscar);
             panel2.Controls.Add(buscar);
             panel2.Location = new Point(22, 18);
             panel2.Name = "panel2";
@@ -117,24 +117,24 @@
             label3.Text = "Telefono del contacto";
             label3.Click += label3_Click;
             // 
-            // tel
+            // telbuscar
             // 
-            tel.BackColor = SystemColors.WindowFrame;
-            tel.ForeColor = Color.White;
-            tel.Location = new Point(15, 111);
-            tel.Name = "tel";
-            tel.Size = new Size(191, 23);
-            tel.TabIndex = 10;
+            telbuscar.BackColor = SystemColors.WindowFrame;
+            telbuscar.ForeColor = Color.White;
+            telbuscar.Location = new Point(15, 111);
+            telbuscar.Name = "telbuscar";
+            telbuscar.Size = new Size(191, 23);
+            telbuscar.TabIndex = 10;
             // 
-            // Nombre
+            // NombreBuscar
             // 
-            Nombre.BackColor = Color.DimGray;
-            Nombre.ForeColor = Color.White;
-            Nombre.Location = new Point(15, 49);
-            Nombre.Name = "Nombre";
-            Nombre.Size = new Size(191, 23);
-            Nombre.TabIndex = 9;
-            Nombre.TextChanged += textBox1_TextChanged;
+            NombreBuscar.BackColor = Color.DimGray;
+            NombreBuscar.ForeColor = Color.White;
+            NombreBuscar.Location = new Point(15, 49);
+            NombreBuscar.Name = "NombreBuscar";
+            NombreBuscar.Size = new Size(191, 23);
+            NombreBuscar.TabIndex = 9;
+            NombreBuscar.TextChanged += textBox1_TextChanged;
             // 
             // buscar
             // 
@@ -147,16 +147,6 @@
             buscar.Text = "Buscar contacto";
             buscar.UseVisualStyleBackColor = false;
             buscar.Click += buscarContacto_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(605, 74);
-            label4.Name = "label4";
-            label4.Size = new Size(111, 30);
-            label4.TabIndex = 11;
-            label4.Text = "Contactos";
             // 
             // Volver
             // 
@@ -188,25 +178,40 @@
             // 
             areaContactoEncontrado.BackColor = Color.Ivory;
             areaContactoEncontrado.BorderStyle = BorderStyle.FixedSingle;
-            areaContactoEncontrado.Location = new Point(558, 107);
+            areaContactoEncontrado.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            areaContactoEncontrado.Location = new Point(446, 128);
             areaContactoEncontrado.Multiline = true;
             areaContactoEncontrado.Name = "areaContactoEncontrado";
-            areaContactoEncontrado.Size = new Size(217, 322);
+            areaContactoEncontrado.Size = new Size(329, 301);
             areaContactoEncontrado.TabIndex = 20;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.BorderStyle = BorderStyle.FixedSingle;
+            label6.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(514, 88);
+            label6.Name = "label6";
+            label6.Size = new Size(203, 28);
+            label6.TabIndex = 21;
+            label6.Text = "Datos de contacto:";
             // 
             // BuscarPantalla
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label6);
             Controls.Add(areaContactoEncontrado);
             Controls.Add(label5);
             Controls.Add(Volver);
-            Controls.Add(label4);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Name = "BuscarPantalla";
             Text = "BuscarPantalla";
+            Load += BuscarPantalla_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
@@ -227,12 +232,12 @@
 
         private Label label1;
         private Label label3;
-        private TextBox tel;
-        private TextBox Nombre;
-        private Label label4;
+        private TextBox telbuscar;
+        private TextBox NombreBuscar;
         private Button Volver;
         private Label label2;
         private Label label5;
         private TextBox areaContactoEncontrado;
+        private Label label6;
     }
 }
